@@ -2,7 +2,7 @@
 
 ## Randomized Render production URL
 
-👉https://pastrypal.netlify.app/](https://webservices-project1.onrender.com
+👉 https://webservices-project1.onrender.com/
 
 ## Table of Contents
 
