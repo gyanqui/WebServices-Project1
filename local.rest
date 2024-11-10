@@ -1,7 +1,25 @@
-// PRODUCTION
+// DEVELOPMENT TEST
+### Get all contacts
+GET http://localhost:3000/users
+
+### Get contact by ID
+GET http://localhost:3000/users/67301bd6d08d379644023db0
+
+### Get contact by ID
+GET http://localhost:3000/users/67301caad08d379644023db1
+
+### Get contact by ID
+GET http://localhost:3000/users/67301cd3d08d379644023db2
+
+### Get contact by ID
+GET http://localhost:3000/users/67301d02d08d379644023db3
+
+
+
+
+// PRODUCTION TEST
 ### Get all contacts
 GET https://webservices-project1.onrender.com/users
-
 
 ### Get contact by ID
 GET https://webservices-project1.onrender.com/users/67301bd6d08d379644023db0
