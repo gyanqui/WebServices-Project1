@@ -13,7 +13,7 @@
 
 ## 📚 Description
 
-This is a university personal project for course WDD 341 Web Services. I will build web application from scratch using Node.js, MondoDB, Express, Javascript
+This project will provide an API for storing and retrieving information about contacts. These contacts will be stored in a MongoDB database and all interaction will happen through the API that I create. I will not need to create a frontend for this project, instead I am creating the API that could be used by any frontend in the future.
 
 ## 🛠️ Setup
 
