@@ -98,52 +98,52 @@
         }
       },
       "put": {
-  "tags": [],
-  "description": "",
-  "parameters": [
-    {
-      "name": "id",
-      "in": "path",
-      "required": true,
-      "type": "string"
-    },
-    {
-      "name": "body",
-      "in": "body",
-      "required": true,
-      "schema": {
-        "type": "object",
-        "properties": {
-          "firstName": {
-            "type": "string",
-            "example": "any"
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
           },
-          "lastName": {
-            "type": "string",
-            "example": "any"
-          },
-          "email": {
-            "type": "string",
-            "example": "any"
-          },
-          "favoriteColor": {
-            "type": "string",
-            "example": "any"
-          },
-          "birthday": {
-            "type": "string",
-            "example": "any"
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "type": "string",
+                  "example": "any"
+                },
+                "lastName": {
+                  "type": "string",
+                  "example": "any"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "type": "string",
+                  "example": "any"
+                },
+                "birthday": {
+                  "type": "string",
+                  "example": "any"
+                }
+              }
+            }
           }
-        }
-      }
-    }
-  ],
-  "responses": {
-    "204": {
-      "description": "No Content"
-    },
-    "500": {
-      "description": "Internal Server Error"
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -168,5 +168,8 @@
         }
       }
     }
-  }
+  },
+  "schema": [
+    "https"
+  ]
 }
