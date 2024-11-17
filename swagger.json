@@ -5,7 +5,7 @@
     "description": "Users API",
     "version": "1.0.0"
   },
-  "host": "webservices-project1.onrender.com",
+  "host": "webservices-project1.onrender.com/",
   "basePath": "/",
   "schemes": [
     "https"
@@ -98,40 +98,52 @@
         }
       },
       "put": {
-        "tags": [],
-        "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
-                  "example": "any"
-                },
-                "email": {
-                  "example": "any"
-                },
-                "favoriteColor": {
-                  "example": "any"
-                },
-                "birthday": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
+  "tags": [],
+  "description": "",
+  "parameters": [
+    {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "body",
+      "in": "body",
+      "required": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "example": "any"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "lastName": {
+            "type": "string",
+            "example": "any"
+          },
+          "email": {
+            "type": "string",
+            "example": "any"
+          },
+          "favoriteColor": {
+            "type": "string",
+            "example": "any"
+          },
+          "birthday": {
+            "type": "string",
+            "example": "any"
+          }
+        }
+      }
+    }
+  ],
+  "responses": {
+    "204": {
+      "description": "No Content"
+    },
+    "500": {
+      "description": "Internal Server Error"
           }
         }
       },
@@ -147,15 +159,14 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
     }
-  },
-  "schema": [
-    "https",
-    "http"
-  ]
+  }
 }

@@ -48,7 +48,7 @@ const updateUser = async (req, res) => {
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    const response = await mongodb.getDatabase().db().collection('users').replaceOne({ _id: userId }, user);
+    const response = await mongodb.getDatabase().db().collection('users').replaceOne({ _id: userId}, user);
     if (response.modifiedCount > 0) {
         res.status(204).send();
     }
@@ -61,10 +61,10 @@ const deleteUser = async (req, res) => {
     //#swagger.tags=['Users]
     const userId = new ObjectId(req.params.id);
     const response = await mongodb.getDatabase().db().collection('users').deleteOne({ _id: userId });
-    if (response.deleteCount > 0) {
+    if (response.deletedCount > 0) {
         res.status(204).send();
     } else {
-        res.status(500).json(response.error || 'Some error ocurred while deleting the user')
+        res.status(500).json(response.error || 'Some error occurred while deleting the user.');
     }
 };
 
