@@ -2,7 +2,7 @@
 
 ## Randomized Render production URL
 
-👉 https://webservices-project1.onrender.com/
+👉 https://webservices-project1.onrender.com/api-docs
 
 ## Table of Contents
 
