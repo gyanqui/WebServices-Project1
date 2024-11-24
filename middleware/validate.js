@@ -1,5 +1,5 @@
 // File: middleware/validation.js
-const { body, param, validationResult } = require('express-validator');
+const { body, validationResult } = require('express-validator');
 
 const userValidationRules = () => {
     return [
